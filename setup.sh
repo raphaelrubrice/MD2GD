@@ -1,4 +1,5 @@
 # Step 1: Create a virtual environment
+current_dir=$PWD
 python3 -m venv ~/md2gd
 
 # Step 2: Activate the virtual environment
@@ -9,7 +10,7 @@ mkdir ~/markdown_to_drive
 cd ~/markdown_to_drive
 
 # Step 4: Add your Python script with shebang
-# (Make sure your markdown_to_drive.py is in this directory)
+cp ${current_dir}/markdown_to_drive.py markdown_to_drive.py
 
 # Step 5: Create the setup.py file
 echo 'from setuptools import setup
