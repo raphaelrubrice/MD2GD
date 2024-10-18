@@ -38,7 +38,7 @@ setup(
 pip install -e .
 
 # Step 7: Correct installed script
-cd ~/mg2gd/bin/
+cd ~/md2gd/bin/
 echo 'import argparse
 from markdown_to_drive import main
 if __name__ == "__main__":
