@@ -1,4 +1,4 @@
-# MD2GD
+# MD2GD (Markdown 2 Google Drive)
 Project to upload the rendered version of a Markdown file (Markdown to PDF Converter) to a specified Google Drive Folder.
 
 #### Table of Contents
