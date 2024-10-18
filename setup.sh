@@ -39,7 +39,8 @@ pip install -e .
 
 # Step 7: Correct installed script
 cd ~/md2gd/bin/
-echo 'import argparse
+echo '#!/usr/bin/env python
+import argparse
 from markdown_to_drive import main
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert Markdown to PDF and upload to Google Drive.")
