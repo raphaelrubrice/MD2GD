@@ -27,14 +27,19 @@ List any software or libraries required before using the project:
    git clone https://github.com/raphaelrubrice/MD2GD.git
    cd MD2GD
    ```
-
-2. **Set Up a Virtual Environment (Optional but Recommended)**
+   OR
+    ```bash
+   git clone git@github.com:raphaelrubrice/MD2GD.git
+   cd MD2GD
+   ```
+    
+3. **Set Up a Virtual Environment (Optional but Recommended)**
    ```bash
    python -m venv ~/md2gd
    source ~/md2gd/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. **Run setup.sh**
+4. **Run setup.sh**
    ```bash
    bash setup.sh
    ```
