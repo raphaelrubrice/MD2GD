@@ -83,11 +83,6 @@ def main(md_file_path, google_drive_folder_link):
     upload_to_google_drive(service, folder_id, html_file_path)
 
 if __name__ == '__main__':
-    # Example usage: Provide the markdown file path and the Google Drive folder link
-    markdown_file_path = "example.md"  # Replace with your markdown file path
-    drive_folder_link = "https://drive.google.com/drive/folders/your-folder-id"  # Replace with your Google Drive folder link
-
-    main(markdown_file_path, dif __name__ == '__main__':
     # Set up argument parsing
     parser = argparse.ArgumentParser(description='Convert a markdown file to HTML and upload it to Google Drive.')
     
@@ -99,4 +94,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # Call the main function with the parsed arguments
-    main(args.markdown_file, args.drive_folder_link)
+    main(args.markdown_file, args.drive_folder_link) 
