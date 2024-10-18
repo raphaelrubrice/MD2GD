@@ -30,13 +30,13 @@ List any software or libraries required before using the project:
 
 2. **Set Up a Virtual Environment (Optional but Recommended)**
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   python -m venv ~/md2gd
+   source ~/md2gd/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. **Install Required Libraries**
+3. **Run setup.sh**
    ```bash
-   pip install -r requirements.txt
+   bash setup.sh
    ```
 
 ### Configuration
@@ -50,7 +50,9 @@ List any software or libraries required before using the project:
 ### Usage
 1. **Run the Script**
    ```bash
-   python markdown_to_drive.py <path/to/your_markdown_file.md> <https://drive.google.com/drive/folders/your_folder_id> <path_to_credentials_file> <output_file_name>
+   source ~/md2gd/bin/activate
+   md2gd <path/to/your_markdown_file.md> <https://drive.google.com/drive/folders/your_folder_id> <path_to_credentials_file> <output_file_name>
+   deactivate
    ```
    - Replace `<path/to/your_markdown_file.md>` with the path to your Markdown file.
    - Replace `<https://drive.google.com/drive/folders/your_folder_id>` with the link to the Google Drive folder where you want to upload the PDF.
