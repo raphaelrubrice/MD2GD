@@ -14,11 +14,12 @@ Project to upload the rendered version of a Markdown file (Markdown to PDF Conve
 List any software or libraries required before using the project:
 - Python 3.x
 - Required Python libraries:
+  - `google-api-python-client`
+  - `google-auth-httplib2`
+  - `google-auth-oauthlib`
+  - `markdown`
   - `markdown2`
   - `weasyprint`
-  - `google-auth`
-  - `google-auth-oauthlib`
-  - `google-api-python-client`
 
 ### Installation
 1. **Clone the Repository**
