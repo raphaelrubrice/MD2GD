@@ -36,3 +36,18 @@ setup(
 
 # Step 6: Install your package
 pip install -e .
+
+# Step 7: Correct installed script
+cd ~/mg2gd/bin/
+echo 'import argparse
+from markdown_to_drive import main
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Convert Markdown to PDF and upload to Google Drive.")
+    parser.add_argument('markdown_file', type=str, help="Path to the Markdown file.")
+    parser.add_argument('drive_folder_link', type=str, help="Google Drive folder link where the PDF will be uploaded.")
+    parser.add_argument('credentials', type=str, help="Path to the Google Drive API credentials JSON file.")
+    parser.add_argument('output_name', type=str, help='The name of the outputed file.')
+    args = parser.parse_args()
+    main(args.markdown_file, args.drive_folder_link, args.credentials, args.output_name)
+    ' > md2gd
+
