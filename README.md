@@ -1,9 +1,5 @@
 # MD2GD
-Project to upload the rendered version of a Markdown file to a specified Google Drive Folder.
-
-To help new users use your Markdown to PDF conversion project, you can provide a clear set of instructions in a README file. Here's a comprehensive outline of what to include in your project's README:
-
-### Project Title: Markdown to PDF Converter
+Project to upload the rendered version of a Markdown file (Markdown to PDF Converter) to a specified Google Drive Folder.
 
 #### Overview
 A brief description of the project, explaining its purpose: to convert Markdown files into beautifully formatted PDF documents and upload them to Google Drive.
