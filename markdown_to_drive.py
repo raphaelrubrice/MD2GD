@@ -86,7 +86,7 @@ def extract_folder_id(drive_folder_link):
     """
     return drive_folder_link.split('/')[-1]
 
-def main(markdown_file, drive_folder_link, credentials_path):
+def main(markdown_file, drive_folder_link, credentials_path, output_name):
     """
     Main function to convert a Markdown file to PDF and upload it to Google Drive.
 
@@ -105,7 +105,9 @@ def main(markdown_file, drive_folder_link, credentials_path):
     folder_id = extract_folder_id(drive_folder_link)
 
     # Upload the PDF content to Google Drive
-    uploaded_file = upload_pdf_to_drive(service, pdf_content, folder_id)
+    if 'pdf' not in output_name:
+        output_name += ".pdf"
+    uploaded_file = upload_pdf_to_drive(service, pdf_content, folder_id, file_name=output_name)
 
     # Get file ID and webViewLink
     file_id = uploaded_file['id']
@@ -118,7 +120,7 @@ if __name__ == "__main__":
     parser.add_argument('markdown_file', type=str, help="Path to the Markdown file.")
     parser.add_argument('drive_folder_link', type=str, help="Google Drive folder link where the PDF will be uploaded.")
     parser.add_argument('credentials', type=str, help="Path to the Google Drive API credentials JSON file.")
-
+    parser.add_argument('output_name', type=str, help='The name of the outputed file.')
     args = parser.parse_args()
-    main(args.markdown_file, args.drive_folder_link, args.credentials)
+    main(args.markdown_file, args.drive_folder_link, args.credentials, args.output_name)
 
