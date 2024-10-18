@@ -1,9 +1,6 @@
 # MD2GD
 Project to upload the rendered version of a Markdown file (Markdown to PDF Converter) to a specified Google Drive Folder.
 
-#### Overview
-A brief description of the project, explaining its purpose: to convert Markdown files into beautifully formatted PDF documents and upload them to Google Drive.
-
 #### Table of Contents
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
