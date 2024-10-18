@@ -1,8 +1,8 @@
 # Step 1: Create a virtual environment
-python3 -m venv ~/myenv
+python3 -m venv ~/md2gd
 
 # Step 2: Activate the virtual environment
-source ~/myenv/bin/activate
+source ~/md2gd/bin/activate
 
 # Step 3: Create project directory
 mkdir ~/markdown_to_drive
@@ -23,6 +23,8 @@ setup(
         "google-auth",
         "google-auth-oauthlib",
         "markdown2",
+	"markdown",
+	"weasyprint"
     ],
     entry_points={
         "console_scripts": [
