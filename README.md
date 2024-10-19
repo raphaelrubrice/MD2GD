@@ -38,7 +38,7 @@ List any software or libraries required before using the project:
    bash setup.sh
    ```
 
-#### Your all set :D ! See usage below.
+#### You're all set :D ! See usage below.
 
 ### Configuration
 1. **Google Drive API Credentials**
